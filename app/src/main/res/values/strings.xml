@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BVCOE-NSS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="branch">
+        <item>CSE</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>ICE</item>
+    </string-array>
+    <string-array name="sem">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+    </string-array>
+    <string name="loading_empty">Loading…</string>
+    <string name="loading_register">Sending registration request…</string>
+</resources>

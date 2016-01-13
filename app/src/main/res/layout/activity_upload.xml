@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/registerButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/tableLayout"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Event Id"
+            android:layout_column="0"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameField"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_alignLeft="@+id/chooseBtn"
+            android:layout_alignStart="@+id/chooseBtn"
+            android:layout_column="12" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Event Name"
+            android:id="@+id/textView2"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/eventField"
+            android:layout_below="@+id/nameField"
+            android:layout_alignLeft="@+id/nameField"
+            android:layout_alignStart="@+id/nameField"
+            android:layout_column="12"
+            android:layout_marginLeft="50dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Description"
+            android:id="@+id/textView3"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/classField"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="50dp"
+            android:layout_column="12" />
+
+    </TableRow>
+
+</TableLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose poster"
+        android:id="@+id/chooseBtn"
+        android:layout_above="@+id/imgView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/registerButton"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+</RelativeLayout>

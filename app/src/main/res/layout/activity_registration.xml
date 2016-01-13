@@ -1,0 +1,320 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    android:id="@+id/Scroll">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="VOLUNTEER\nNO."
+                android:id="@+id/volnumber"
+                android:layout_column="0"
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="18dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vollText"
+                android:layout_column="11"
+                android:layout_marginTop="42dp"
+                android:layout_marginRight="450dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/Name">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="NAME"
+                android:id="@+id/name"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/NameText"
+                android:layout_column="11"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="450dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:id="@+id/Semseter">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="SEMESTER"
+                android:id="@+id/semester"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp" />
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SemText"
+                android:layout_column="11"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:entries="@array/sem"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:layout_column="11"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="450dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="BRANCH"
+                android:id="@+id/branch"
+                android:layout_column="0"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BranchText"
+                android:entries="@array/branch"
+                android:layout_column="11"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="150dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ROLL NO."
+                android:id="@+id/rollnumber"
+                android:layout_column="0"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/RollText"
+                android:layout_column="11"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="450dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="EMAIL ID"
+                android:id="@+id/emailid"
+                android:layout_column="0"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/EmailText"
+                android:layout_column="11"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="450dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:longClickable="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ADDRESS"
+                android:id="@+id/address"
+                android:layout_column="0"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:id="@+id/AddressText"
+                android:layout_column="11"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="450dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="EXTRA\nCURRICULUM"
+                android:id="@+id/skills"
+                android:layout_column="0"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/SkillText"
+                android:layout_column="11"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="450dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="D.O.B"
+                android:id="@+id/dob"
+                android:layout_column="0"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/DOBText"
+                android:layout_column="11"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="450dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="PHONE NO."
+                android:id="@+id/phone"
+                android:layout_column="0"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/PhoneText"
+                android:layout_column="11"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="450dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="BLOOD GROUP"
+                android:id="@+id/textView"
+                android:layout_column="0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BloodText"
+                android:layout_column="11"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="450dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:id="@+id/submitButton"
+                android:layout_column="11"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold|italic"
+                android:textColor="#000666"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="600dp" />
+
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
