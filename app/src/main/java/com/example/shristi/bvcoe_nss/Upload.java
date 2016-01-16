@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.backendless.Backendless;
@@ -24,14 +23,13 @@ import com.backendless.files.BackendlessFile;
 
 import java.io.File;
 
-//uploading in gr
+//uploading in gr app
 public class Upload extends AppCompatActivity {
     Context context;
     String photoBrowseUrl;
     Cursor cursor;
     String imgDecodableString;
     private ProgressDialog progressDialog;
-    //String[] filePathColumn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +37,7 @@ public class Upload extends AppCompatActivity {
         Backendless.initApp(this,"A0EC8CE8-BC06-EC54-FFE2-9B50776AAA00","AE1E553B-0836-C1E1-FFAF-96E976956000","v1");
 
         Button chooseBtn = (Button) findViewById(R.id.chooseBtn);
-        //chooseBtn.setTypeface( typeface );
+
         chooseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,8 +82,6 @@ public class Upload extends AppCompatActivity {
                     intent.putExtra(Default.FILE_PATH, filePath);
                     setResult(Default.ADD_NEW_PHOTO_RESULT, intent);
                     progressDialog.cancel();
-
-                    // finish();
                 }
 
                 @Override
@@ -105,7 +101,6 @@ public class Upload extends AppCompatActivity {
             cursor.moveToFirst();
 
             int idx = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
-            // t.setText(idx);
             return cursor.getString(idx);
         }
     }
@@ -148,7 +143,6 @@ public class Upload extends AppCompatActivity {
             {
                 super.handleResponse( registeredUser );
                 Intent registrationResult = new Intent();
-             //   registrationResult.putExtra( BackendlessUser.EMAIL_KEY, registeredUser.getEmail() );
                 setResult( RESULT_OK, registrationResult );
                 Upload.this.finish();
             }
@@ -170,20 +164,13 @@ public class Upload extends AppCompatActivity {
 
                 EditText nameField = (EditText) findViewById(R.id.nameField);
                 EditText eventField = (EditText) findViewById(R.id.eventField);
-              // EditText passwordField = (EditText) findViewById(R.id.eventField);
                 EditText classField=(EditText)findViewById(R.id.classField);
-                //EditText passwordConfirmField = (EditText) findViewById(R.id.passwordConfirmField);
-
-                CharSequence name = nameField.getText();
+               CharSequence name = nameField.getText();
                 CharSequence name1 = eventField.getText();
                 CharSequence password ="1";
-                CharSequence link=photoBrowseUrl; //passwordField.getText();
-                //CharSequence passwordConfirmation = passwordConfirmField.getText();
+                CharSequence link=photoBrowseUrl;
                 CharSequence classes=classField.getText();
-              //  classField.setText(password);
-
                 LoadingCallback<BackendlessUser> registrationCallback = createRegistrationCallback();
-
                 registrationCallback.showLoading();
                 registerUser(name.toString(),
                        password.toString(),
@@ -194,6 +181,4 @@ public class Upload extends AppCompatActivity {
             }
         };
     }
-
-
 }

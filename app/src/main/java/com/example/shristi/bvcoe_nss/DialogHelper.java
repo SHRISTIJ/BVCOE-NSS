@@ -2,7 +2,6 @@ package com.example.shristi.bvcoe_nss;
 
 import android.app.AlertDialog;
 import android.content.Context;
-
 /**
  * Provides static methods to create necessary dialogs.
  */

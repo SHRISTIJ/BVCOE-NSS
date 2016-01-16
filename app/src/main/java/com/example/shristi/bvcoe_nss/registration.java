@@ -164,14 +164,6 @@ public class registration extends AppCompatActivity {
             }
 
 
-            //If you want to use HttpRequest class from http://stackoverflow.com/a/2253280/1261816
-           /* try {
-			HttpRequest httpRequest = new HttpRequest();
-                httpRequest.sendPost(url, postBody);
-		}catch (Exception exception){
-			result = false;
-		}*/
-
 
             try{
                 //Create OkHttpClient for sending request
