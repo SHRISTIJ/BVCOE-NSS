@@ -91,7 +91,7 @@ public class Upload extends AppCompatActivity {
                 @Override
                 public void handleFault(BackendlessFault fault) {
                     progressDialog.cancel();
-                    Toast.makeText(Upload.this, fault.toString(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Upload.this, "No Network Connection. Please check your internet connection and try again later", Toast.LENGTH_LONG).show();
                 }
             });
         }

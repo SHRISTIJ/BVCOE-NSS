@@ -78,7 +78,7 @@ public class LoadingCallback<T> implements AsyncCallback<T> {
     public void handleFault( BackendlessFault fault )
     {
         progressDialog.dismiss();
-        DialogHelper.createErrorDialog( context, "BackendlessFault", fault.getMessage() ).show();
+        DialogHelper.createErrorDialog( context, "No Network Connection", "Please check your internet connection and try again later" ).show();
     }
 
     /**
