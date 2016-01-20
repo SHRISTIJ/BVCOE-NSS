@@ -46,8 +46,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/nameField"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginLeft="20dp"
             android:layout_alignLeft="@+id/chooseBtn"
             android:layout_alignStart="@+id/chooseBtn"
             android:layout_column="12" />
@@ -74,7 +73,7 @@
             android:layout_alignLeft="@+id/nameField"
             android:layout_alignStart="@+id/nameField"
             android:layout_column="12"
-            android:layout_marginLeft="50dp" />
+            android:layout_marginLeft="20dp" />
     </TableRow>
 
     <TableRow
@@ -98,7 +97,7 @@
             android:layout_below="@+id/textView3"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="20dp"
             android:layout_column="12" />
 
     </TableRow>

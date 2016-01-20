@@ -1,7 +1,7 @@
 package com.example.shristi.bvcoe_nss;
 
 import android.app.ProgressDialog;
-import android.content.Context;
+//import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.BitmapFactory;
@@ -25,7 +25,7 @@ import java.io.File;
 
 //uploading in gr app
 public class Upload extends AppCompatActivity {
-    Context context;
+  //  Context context;
     String photoBrowseUrl;
     Cursor cursor;
     String imgDecodableString;
@@ -87,7 +87,7 @@ public class Upload extends AppCompatActivity {
                 @Override
                 public void handleFault(BackendlessFault fault) {
                     progressDialog.cancel();
-                    Toast.makeText(Upload.this, "No Network Connection. Please check your internet connection and try again later", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(Upload.this, "No connection! Please check your internet connection and try again later", Toast.LENGTH_LONG).show();
                 }
             });
         }
